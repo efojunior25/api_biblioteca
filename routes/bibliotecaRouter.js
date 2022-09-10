@@ -5,9 +5,9 @@ const router = require('express').Router();
 
 const bibliotecaController = require('../controllers/bibliotecaController');
 
-router.get('/livro', (req, res) => {});
+router.get('/biblioteca', (req, res) => {});
 
-router.post('/livro', (req, res) => {
+router.post('/biblioteca', (req, res) => {
     try {
         const result = await bibliotecaController.salvarLivro(req.body);
         res.json(result);
@@ -16,8 +16,8 @@ router.post('/livro', (req, res) => {
     }
 });
 
-router.put('/livro/:id', (req, res) => {});
+router.put('/biblioteca/:id', (req, res) => {});
 
-router.delete('/livro/:id', (req, res) => {});
+router.delete('/biblioteca/:id', (req, res) => {});
 
 module.exports = router;    
